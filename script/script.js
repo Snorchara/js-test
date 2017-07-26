@@ -32,7 +32,7 @@ do
      disc=Discriminator(a,b,c);
     if(isNaN(a)|| a==0)
     {
-        alert('PLease do only Numerical inputs for Values A B C and dont make A value equal to Zero');
+        alert('PLease do only Numerical inputs for Values A B C and dont make A value equal to Zero, because this will not be the quadratic equation!');
     }
     else    if(isNaN(b))
     {
