@@ -1,9 +1,8 @@
-function Discriminator(num1,num2,num3)
-{
+function discriminator(num1,num2,num3){
   let D =  Number(Math.pow(num2,2)- 4*num1*num3);
   return D;
 }
-function Equation (D, num1,num2)
+function equation (D, num1,num2) 
 {
    if(D==0)
    {
@@ -12,6 +11,9 @@ function Equation (D, num1,num2)
    }
    if(D<=0)
    {
+        //     let x1= Number(Math.complex((-(num2),Math.sqrt(D)))/2*num1);
+        //   let x2 = Number(Math.complex((-(num2),-Math.sqrt(D)))/2*num1);
+        //   document.write('x_1='+x1 +'<br>' + 'x_2='+x2+'<br>');
           document.write('The result will be in complex values, have not yet figured how to count that,even with the usage of the external library for complex numbers.');
    }
     if(D>=0)
@@ -29,7 +31,7 @@ do
      a=prompt('Enter value A=');
      b=prompt('Enter value B=');
      c=prompt('Enter value C=');
-     disc=Discriminator(a,b,c);
+     disc=discriminator(a,b,c);
     if(isNaN(a)|| a==0)
     {
         alert('PLease do only Numerical inputs for Values A B C and dont make A value equal to Zero, because this will not be the quadratic equation!');
@@ -52,4 +54,4 @@ document.write('<p class="js-text">Here is the result of Quadratic equation</p>'
 document.write('<br>');
 }
 
-document.write(Equation(disc,a,b));
+document.write(equation(disc,a,b));
